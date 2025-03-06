@@ -11,7 +11,7 @@ const ManageCompany = () => {
   useEffect(() => {
     const fetchMedicines = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/company/getallmedicines');
+        const response = await axios.get('https://min-and-max-1.onrender.com/api/company/getallmedicines');
         setMedicines(response.data);
       } catch (error) {
         console.error('Error fetching medicines:', error);

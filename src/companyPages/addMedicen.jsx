@@ -44,7 +44,7 @@ const AddMedicineForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/api/company/addmedicine', medicineData);
+            const response = await axios.post('https://min-and-max-1.onrender.com/api/company/addmedicine', medicineData);
             alert('Medicine added successfully!');
             setMedicineData({
                 name: '',

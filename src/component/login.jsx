@@ -22,7 +22,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:4000/api/auth/login', formData);
+            const response = await axios.post('https://min-and-max-1.onrender.com/api/auth/login', formData);
             const { accountType } = response.data;
 
             // Store the user info or token in localStorage

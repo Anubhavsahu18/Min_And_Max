@@ -72,7 +72,7 @@ const Extract = () => {
     setIsFake(false);
 
     try {
-      const response = await axios.post('http://localhost:4000/api/company/scan', {
+      const response = await axios.post('https://min-and-max-1.onrender.com/api/company/scan', {
         companyName,
         medicineName,
         batchNumber
